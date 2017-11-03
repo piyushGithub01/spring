@@ -33,7 +33,7 @@ public class ProductService {
 		Product product1 = new Product("1", "Laptop", maker1, 2);
 		Product product2 = new Product("2", "Keyboard", maker1, 3);
 		Product product3 = new Product("3", "Mouse", maker1, 0);
-		Product product4 = new Product("3", "MacBook Pro", maker2, 1);
+		Product product4 = new Product("4", "MacBook Pro", maker2, 1);
 		products.put(product1.getId(), product1);
 		products.put(product2.getId(), product2);
 		products.put(product3.getId(), product3);
