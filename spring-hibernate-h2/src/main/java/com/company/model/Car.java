@@ -30,7 +30,7 @@ public class Car implements Serializable {
     @Column(name = "REGISTRATION_NUMBER")
     private String registrationNumber;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JsonBackReference
     private Company company;
 

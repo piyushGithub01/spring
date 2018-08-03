@@ -34,11 +34,11 @@ public class Company implements Serializable {
     @Column(name = "NAME", nullable = false)
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "company", fetch = FetchType.LAZY, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "company", fetch = FetchType.EAGER, orphanRemoval = true)
     @JsonManagedReference
     private Set<Department> departments = new HashSet<>();
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "company", fetch = FetchType.LAZY, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "company", fetch = FetchType.EAGER, orphanRemoval = true)
     @JsonManagedReference
     private Set<Car> cars = new HashSet<>();
 
